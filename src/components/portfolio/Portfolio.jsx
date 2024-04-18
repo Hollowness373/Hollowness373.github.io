@@ -6,7 +6,6 @@ import IMG3 from "../../assets/wastesegregation.png";
 import IMG4 from "../../assets/databois.png";
 import IMG5 from "../../assets/primaryhealthcare.png";
 import IMG6 from "../../assets/qrlibrary.png";
-import IMG7 from "../../assets/biodata.png";
 
 
 const Portfolio = () => {
@@ -50,7 +49,7 @@ const projects = [
     title : "Coffee App",
     github : "https://github.com/Hollowness373/CoffeeApp",
     description : "A mobile application designed to replicate Coffee App v2 UI by Dennis Nzioki. Allows you to easily order coffee and enjoy it at your favorite cafes nearby.",
-    stack : " React Native"
+    stack : " React Native, Node, Express.js, MySQL, JavaScript"
   },
   {
     id : 2,
@@ -58,7 +57,7 @@ const projects = [
     title : "SocialEase",
     github : "https://github.com/Hollowness373/SocialEase",
     description : "Social media app that allows to connect and share with friends and followers. Create posts, share stories, and explore the profiles of others to stay updated on their lives and experiences.",
-    stack : " React Native, AWS Amplify"
+    stack : " React Native, AWS Amplify, JavaScript"
   },
   {
     id : 3,
@@ -66,7 +65,7 @@ const projects = [
     title : "Waste Segregation App",
     github : "https://github.com/Lico0122/Thesis-Arduino",
     description : "Waste segregation design automatically sorts household waste into separate bins, with real-time monitoring, users receive notifications when a bin is nearing capacity.",
-    stack : " React Native, PHP, MySQL, XAMPP"
+    stack : " React Native, PHP, MySQL, XAMPP, JavaScript"
   },
   {
     id : 4,
@@ -74,7 +73,7 @@ const projects = [
     title : "DataBois",
     github : "https://github.com/Hollowness373/DataBoisApplication",
     description : "Experience seamless online shopping with our e-commerce app. Browse a wide range of products across multiple categories, compare prices, and add items to your cart with ease",
-    stack : " React Native, PHP, MySQL, XAMPP"
+    stack : " React Native, PHP, MySQL, XAMPP, JavaScript"
   },
   {
     id : 5,
@@ -90,14 +89,6 @@ const projects = [
     title : "QrLibrary App",
     github : "https://github.com/Hollowness373/Qr-Library-App",
     description : "Automate the time-in and time-out system in school libraries by scanning the students QR codes. Remove the hassle of writing down information and looking out for a pen!",
-    stack : " React Native, PHP, MySQL, XAMPP"
-  },
-  {
-    id : 7,
-    image : IMG7,
-    title : "Biodata App",
-    github : "https://github.com/Hollowness373/Biodata-App",
-    description : "Allows user to create digital Bio data",
-    stack : " Android Studio, Java, SQLite"
-  },
+    stack : " React Native, PHP, MySQL, XAMPP, JavaScript"
+  }
 ]

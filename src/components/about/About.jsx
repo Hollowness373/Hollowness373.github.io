@@ -25,9 +25,10 @@ const About = () => {
               <small>Computer Engineering</small>
             </article>
             <article className='about__card'>
+              <a href='#portfolio'>
               <FaRegFolderOpen className='about__icon'/>
               <h5>Projects</h5>
-              <small>6+ Projects</small>
+              </a>
             </article>
           </div>
 
