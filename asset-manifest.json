@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6843995f.css",
-    "main.js": "/static/js/main.9d711ca1.js",
+    "main.js": "/static/js/main.7ef868f8.js",
     "static/media/curriculum-vitae.pdf": "/static/media/curriculum-vitae.4c7fa0756a67758792ae.pdf",
     "static/media/me-toga.jpg": "/static/media/me-toga.1d9715ba71d8d80c9e6e.jpg",
     "static/media/databois.png": "/static/media/databois.2aad46eec4206a0d36e6.png",
@@ -9,15 +9,14 @@
     "static/media/socialease.png": "/static/media/socialease.7f6e136d224429544e56.png",
     "static/media/wastesegregation.png": "/static/media/wastesegregation.aac93fdb68faa91500d2.png",
     "static/media/primaryhealthcare.png": "/static/media/primaryhealthcare.3dc09fc7cca5f544141d.png",
-    "static/media/biodata.png": "/static/media/biodata.3eb003894dbf25464cbf.png",
     "static/media/me-formal.png": "/static/media/me-formal.cbb22ed34ac11979556b.png",
     "static/media/qrlibrary.png": "/static/media/qrlibrary.bab5da817b1bcc7075b5.png",
     "index.html": "/index.html",
     "main.6843995f.css.map": "/static/css/main.6843995f.css.map",
-    "main.9d711ca1.js.map": "/static/js/main.9d711ca1.js.map"
+    "main.7ef868f8.js.map": "/static/js/main.7ef868f8.js.map"
   },
   "entrypoints": [
     "static/css/main.6843995f.css",
-    "static/js/main.9d711ca1.js"
+    "static/js/main.7ef868f8.js"
   ]
 }
