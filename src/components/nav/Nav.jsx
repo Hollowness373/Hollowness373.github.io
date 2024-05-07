@@ -3,7 +3,6 @@ import "./nav.css";
 import {AiOutlineHome} from "react-icons/ai";
 import {AiOutlineUser} from "react-icons/ai";
 import {BiBookAlt} from "react-icons/bi";
-import {GiSkills} from "react-icons/gi";
 import {MdOutlineDeveloperMode} from "react-icons/md";
 import {AiOutlineMail} from "react-icons/ai";
 

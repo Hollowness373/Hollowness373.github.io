@@ -6,11 +6,12 @@ import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contacts from  "./components/contacts/Contacts";
 import Footer from "./components/footer/Footer";
-
+import StarsCanvas from './stars/StarsCanvas.tsx';
 
 const App = () => {
   return (
     <>
+      <StarsCanvas />
       <Header />
       <Nav />
       <About />

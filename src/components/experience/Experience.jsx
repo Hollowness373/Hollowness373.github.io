@@ -1,15 +1,22 @@
 import React from 'react';
 import "./experience.css";
-import {BsFillPatchCheckFill} from "react-icons/bs"
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/motion.ts";
+import { useInView } from "react-intersection-observer";
+import {BsFillPatchCheckFill} from "react-icons/bs";
 
 const Experience = () => {
+
+  const { ref, inView } = useInView({triggerOnce: true})
+
+
   return (
     <section id='experience'>
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
-      <div className="container experience__container">
-        <div className="experience__frontend">
+      <motion.div ref={ref} initial="hidden" animate={inView? "visible" : "hidden"}  className="container experience__container">
+        <motion.div variants={fadeIn(0.5)} className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
             <article className='experience__details'>
@@ -49,9 +56,9 @@ const Experience = () => {
               </div>
             </article>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="experience__backend">
+        <motion.div variants={fadeIn(0.9)} className="experience__backend">
           <h3>Backend Development</h3>
           <div className="experience__content">
             <article className='experience__details'>
@@ -91,9 +98,9 @@ const Experience = () => {
               </div>
             </article>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="experience__backend">
+        <motion.div variants={fadeIn(1.3)} className="experience__backend">
           <h3>Other Tech</h3>
           <div className="experience__content">
             <article className='experience__details'>
@@ -127,8 +134,8 @@ const Experience = () => {
               </div>
             </article>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   )
 }
