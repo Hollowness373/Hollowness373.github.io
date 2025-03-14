@@ -120,6 +120,16 @@ img {
     z-index: 1;
 }
 
+.loading-screen {
+    text-align: center;
+    background-color: #030014;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
 /* MEDIA QUERIES => MD */
 @media screen and (max-width: 1024px) {
     .container {

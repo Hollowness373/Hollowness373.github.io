@@ -28,7 +28,7 @@
 
 .portfolio__item-cta {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     margin: 1rem 0;
 }
 
@@ -41,6 +41,26 @@
 .portfolio__item-stack {
     align-self: center;
     font-size: 14px
+}
+
+.btn-item {
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    width: max-content;
+    height: 50px;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn-item:hover {
+    background: #CAE1D3;
+    color: var(--color-bg);
+    border-color: transparent;
 }
 
 

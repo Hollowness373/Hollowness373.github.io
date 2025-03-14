@@ -10,9 +10,9 @@ const HeaderSocials = () => {
   return (
     <motion.div initial="hidden" animate="visible">
       <motion.div variants={slideInFromTop} className='header__socials'>
-        <a href='https://linkedin.com/in/actub-bryanyj/' target="_blank"><BsLinkedin/></a>
-        <a href='https://github.com/Hollowness373' target="_blank"><FaGithub/></a>
-        <a href='https://facebook.com/NayrbJY' target="_blank"><FaFacebook/></a>
+        <a href='https://linkedin.com/in/actub-bryanyj/' target="_blank" rel='noreferrer'><BsLinkedin/></a>
+        <a href='https://github.com/Hollowness373' target="_blank" rel='noreferrer'><FaGithub/></a>
+        <a href='https://facebook.com/NayrbJY' target="_blank" rel='noreferrer'><FaFacebook/></a>
       </motion.div>
     </motion.div>
   )

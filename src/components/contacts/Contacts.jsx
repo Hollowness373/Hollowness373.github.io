@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
-import emailjs from "emailjs-com";
+//import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser"
 import "./contacts.css";
 import {MdOutlineMail} from "react-icons/md";
 import {RiMessengerLine} from "react-icons/ri";
@@ -13,13 +14,38 @@ const Contacts = () => {
 
   const form = useRef();
   const { ref, inView } = useInView({triggerOnce: true})
+  
+  emailjs.init({
+    publicKey: process.env.REACT_APP_USER_ID,
+    // Do not allow headless browsers
+    blockHeadless: true,
+    blockList: {
+      // Block the suspended emails
+      list: ['foo@emailjs.com', 'bar@emailjs.com'],
+      // The variable contains the email address
+      watchVariable: 'userEmail',
+    },
+    limitRate: {
+      // Set the limit rate for the application
+      id: 'app',
+      // Allow 1 request per 10s
+      throttle: 10000,
+    },
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_USER_ID);
-
-    e.target.reset();
+    console.log(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_USER_ID)
+    try {
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_USER_ID).then((result) => {
+        console.log('Email sent successfully:', result.text);
+      }, (error) => {
+        console.error('Email sending error:', error.text);
+      });
+      e.target.reset();
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

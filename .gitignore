@@ -25,3 +25,4 @@ yarn-error.log*
 # Ignore configuration files
 .env
 src/assets
+deploy.txt
