@@ -120,6 +120,7 @@ img {
     z-index: 1;
 }
 
+/* React-Spinner Hash */
 .loading-screen {
     text-align: center;
     background-color: #030014;
